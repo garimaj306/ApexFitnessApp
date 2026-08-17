@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Apex Fit</string>
+
+    <!-- Navigation Tabs -->
+    <string name="tab_today">Today</string>
+    <string name="tab_workout">Workout</string>
+    <string name="tab_vitals">Vitals</string>
+    <string name="tab_insights">Insights</string>
+    <string name="tab_profile">Profile</string>
+
+    <!-- Today Tab -->
+    <string name="today_greeting_morning">Good Morning,</string>
+    <string name="today_greeting_afternoon">Good Afternoon,</string>
+    <string name="today_greeting_evening">Good Evening,</string>
+    <string name="steps_label">Steps</string>
+    <string name="daily_goal_label">Daily Goal</string>
+    <string name="calories_burnt_title">Calories Burnt</string>
+    <string name="active_streak_title">Active Streak</string>
+    <string name="water_intake_title">Hydration</string>
+    <string name="weight_title">Current Weight</string>
+    <string name="quick_add_water">+250ml</string>
+    <string name="recent_activity_title">Recent Activity</string>
+    <string name="last_night_sleep_title">Last Night Sleep</string>
+
+    <!-- Workout Tab -->
+    <string name="start_workout">START WORKOUT</string>
+    <string name="pause_workout">PAUSE</string>
+    <string name="resume_workout">RESUME</string>
+    <string name="finish_workout">FINISH</string>
+    <string name="activity_run">Run</string>
+    <string name="activity_walk">Walk</string>
+    <string name="activity_cycle">Cycle</string>
+    <string name="activity_hike">Hike</string>
+    <string name="metric_elapsed_time">TIME</string>
+    <string name="metric_distance">DISTANCE</string>
+    <string name="metric_pace">PACE</string>
+    <string name="metric_bpm">HEART RATE</string>
+    <string name="gps_ready">GPS Signal Strong</string>
+
+    <!-- Vitals Tab -->
+    <string name="wearable_connected">Wearable Synced (Health Connect)</string>
+    <string name="hr_trend_title">Heart Rate (24h Trend)</string>
+    <string name="sleep_breakdown_title">Sleep Stage Breakdown</string>
+    <string name="log_vital_cta">Log Health Metric</string>
+
+    <!-- Insights Tab -->
+    <string name="tab_trends">Activity Trends</string>
+    <string name="tab_heatmap">Route Heatmap</string>
+    <string name="weekly_steps_chart">Weekly Steps Analysis</string>
+    <string name="monthly_distance_chart">Monthly Distance (km)</string>
+
+    <!-- Profile Tab -->
+    <string name="profile_title">Athlete Profile</string>
+    <string name="step_goal_editor_title">Daily Step Goal Target</string>
+    <string name="seed_demo_data_btn">Seed 14-Day Realistic Data</string>
+    <string name="firebase_sync_status">Cloud Firestore Status: Connected</string>
+
+    <!-- Maps Key -->
+    <string name="google_maps_key">AIzaSyDummyMapsKeyForStandardAndroidBuild</string>
+</resources>

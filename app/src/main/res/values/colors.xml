@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core Atmospheric Dark Theme Colors -->
+    <color name="bg_dark">#0A0E18</color>
+    <color name="bg_surface">#111724</color>
+    <color name="bg_card">#141A28</color>
+    <color name="bg_card_elevated">#1C2538</color>
+    <color name="bg_stroke">#212C40</color>
+
+    <!-- Precise Luminous Accents -->
+    <color name="strava_orange">#FC5200</color>
+    <color name="strava_orange_light">#FF7043</color>
+    <color name="google_fit_cyan">#00E5FF</color>
+    <color name="google_fit_green">#00E676</color>
+    <color name="neon_mint">#00F5A0</color>
+    <color name="warm_amber">#FF7043</color>
+    <color name="water_blue">#00E5FF</color>
+    <color name="water_pill_bg">#1976D2</color>
+    <color name="heart_rate_red">#FF3366</color>
+
+    <!-- Sleep Stages -->
+    <color name="sleep_deep">#5E35B1</color>
+    <color name="sleep_light">#26C6DA</color>
+    <color name="sleep_rem">#7C4DFF</color>
+    <color name="sleep_awake">#FFB300</color>
+
+    <!-- Typography Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#8E9DAE</color>
+    <color name="text_muted">#68778A</color>
+
+    <!-- Status & HUD -->
+    <color name="hud_overlay">#D90A0E18</color>
+    <color name="hud_active_pulse">#3300E676</color>
+    <color name="divider">#1A2336</color>
+    <color name="ring_track">#1C2538</color>
+</resources>

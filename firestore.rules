@@ -1,0 +1,35 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // User root profile and private subcollection sandbox
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+      
+      // Materialized daily summaries (Fast Today dashboard & historical charts)
+      match /daily_summaries/{dateString} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      
+      // Workouts collection (GPS Trails, Activity Durations, Polyline strings)
+      match /workouts/{workoutId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+        
+        // High-resolution GPS breadcrumbs subcollection
+        match /gps_points/{pointId} {
+          allow read, write: if request.auth != null && request.auth.uid == userId;
+        }
+      }
+      
+      // Sleep sessions (Duration, sleep quality, stage breakdown)
+      match /sleep_sessions/{sleepId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      
+      // Health vitals (24h Heart rate sensor, manual weight logs, water intake)
+      match /vitals/{vitalId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+    }
+  }
+}

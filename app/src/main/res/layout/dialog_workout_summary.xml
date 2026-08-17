@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_hud_overlay"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Celebration Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="🎉 Workout Complete!"
+        android:textColor="@color/strava_orange"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_dialog_activity_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:text="Tempo Run Session Saved"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp" />
+
+    <!-- 2x2 Summary Stats Grid -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <!-- Time -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextAppearance.Fitness.HUD.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL TIME" />
+
+            <TextView
+                android:id="@+id/tv_dialog_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:38:20"
+                android:textColor="@color/text_primary"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Distance -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextAppearance.Fitness.HUD.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DISTANCE" />
+
+            <TextView
+                android:id="@+id/tv_dialog_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.42 km"
+                android:textColor="@color/text_primary"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Avg Pace -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextAppearance.Fitness.HUD.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AVG PACE" />
+
+            <TextView
+                android:id="@+id/tv_dialog_pace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5&apos;58&quot; /km"
+                android:textColor="@color/google_fit_cyan"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Calories -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextAppearance.Fitness.HUD.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CALORIES BURNT" />
+
+            <TextView
+                android:id="@+id/tv_dialog_calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="512 kcal"
+                android:textColor="@color/google_fit_green"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </GridLayout>
+
+    <!-- Cloud Sync Status -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="✓ Polyline encoded &amp; synced to Cloud Firestore"
+        android:textColor="@color/google_fit_green"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <!-- Dismiss CTA -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_dialog_close"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/strava_orange"
+        android:text="VIEW IN DASHBOARD"
+        android:textColor="@color/text_primary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="27dp" />
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_hud_overlay"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Health Metric"
+        android:textColor="@color/text_primary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Record manual vital entry directly into Cloud Firestore"
+        android:textColor="@color/text_muted"
+        android:textSize="12sp" />
+
+    <!-- Metric Type Selector -->
+    <RadioGroup
+        android:id="@+id/rg_vital_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Weight (kg)"
+            android:textColor="@color/text_primary" />
+
+        <RadioButton
+            android:id="@+id/rb_water"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Water (ml)"
+            android:textColor="@color/text_primary" />
+    </RadioGroup>
+
+    <!-- Value Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_vital_value"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Value (e.g. 72.5 or 500)"
+        android:textColorHint="@color/text_muted"
+        app:boxStrokeColor="@color/strava_orange"
+        app:hintTextColor="@color/strava_orange">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_vital_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text_primary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Save Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save_vital"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/strava_orange"
+        android:text="SAVE TO CLOUD"
+        android:textColor="@color/text_primary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="27dp" />
+
+</LinearLayout>

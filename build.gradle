@@ -1,0 +1,14 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '8.4.1' apply false
+    id 'com.google.gms.google-services' version '4.4.2' apply false
+}
+
+// Redirect build artifacts outside of OneDrive to permanently eliminate Windows / OneDrive file locking conflicts
+allprojects {
+    layout.buildDirectory.set(file("${System.getProperty("user.home")}/.gradle-builds/FitnessApp/${project.name}"))
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.layout.buildDirectory
+}

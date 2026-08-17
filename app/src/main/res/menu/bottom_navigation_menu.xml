@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_today"
+        android:icon="@drawable/ic_tab_today"
+        android:title="@string/tab_today" />
+    <item
+        android:id="@+id/nav_workout"
+        android:icon="@drawable/ic_tab_workout"
+        android:title="@string/tab_workout" />
+    <item
+        android:id="@+id/nav_vitals"
+        android:icon="@drawable/ic_tab_vitals"
+        android:title="@string/tab_vitals" />
+    <item
+        android:id="@+id/nav_insights"
+        android:icon="@drawable/ic_tab_insights"
+        android:title="@string/tab_insights" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_tab_profile"
+        android:title="@string/tab_profile" />
+</menu>

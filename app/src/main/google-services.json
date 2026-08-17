@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "885927425849",
+    "project_id": "apexfitness-64230",
+    "storage_bucket": "apexfitness-64230.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885927425849:android:ee375cc11bc37f5b29dae8",
+        "android_client_info": {
+          "package_name": "com.fitnessapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu8kvOvbYTe5A3pLIDFhV8OM1fXA_vTvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
