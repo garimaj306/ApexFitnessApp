@@ -95,16 +95,3 @@ firestore
            └── sourceDeviceName: string
 ```
 
----
-
-## 🚀 How to Run in Android Studio
-
-1. **Open Android Studio**.
-2. Click **Open** (or `File > Open...`) and select this folder:
-   `c:\Users\Garima Joshi\OneDrive\Desktop\Fitness App`
-3. Android Studio will automatically sync the Gradle project.
-4. Select an Android Emulator or connected physical device (Android 8.0+ / API 26+).
-5. Click **Run ▶** (`Shift + F10`).
-6. In the app:
-   - Tap **Profile > Seed 14-Day Realistic Cloud Data** to immediately explore all historical charts, routes, and sleep breakdowns.
-   - Go to **Workout > START WORKOUT** to experience the live GPS HUD and polyline compression in action!
